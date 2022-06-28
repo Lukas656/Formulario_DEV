@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff; 
+    background-color: black;
+    
+}
+
+.conteiners{
+    display: flex;
+   
+}
+.conteiner1{  
+    color: #ffffff; 
+    padding: 15px;
+    background-color: #011946;
+    border: 5px solid #510167;
+    width: 110vh;
+    height: 590vh;
+}
+.conteiner1 h3{
+    color: rgb(158, 58, 252);
+    font-size: 25px;
+    padding: 30px;
+}
+.conteiner1 ul{
+    padding-left: 15px;
+}
+
+.fundoTitulo{
+    background-image: linear-gradient(160deg, #012567 0%, #580081 100%);
+    border-radius: 2px;
+    padding: 15px;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
+.titulo{
+    text-align: center;
+    padding: 35px;
+    padding-bottom: 30px;
+    font-size: 65px;
+    color: #c8b6ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.info{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 290px;
+    height: 354px;
+    background-image: linear-gradient(160deg, #67137e 0%, #8a03b8 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   } 
+   .card2 {
+    width: 290px;
+    height: 354px;
+    background-color: #1a1a1a;
+    transition: all .2s;
+   }
+.card2 h2{
+    padding: 15px;
+}
+.card p{
+    padding: 10px;
+}
+  
+   
+   .card2:hover {
+    background-image: linear-gradient(160deg, #012567 0%, #580081 100%);
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+
+
+  /* Conteiner 2 com o formulario de cadastro*/ 
+.conteiner2{
+    background-color: #510167;
+    background-image: linear-gradient(160deg, #510167 0%, #060008 100%);
+    border: 2px solid #380B61;
+    justify-content: center;
+    position: absolute;
+    padding: 15px;
+    margin-left: 720px;
+    width: 80vh;
+    height: 120vh;
+}
+
+/* Elementos com o ID "titulo" */
+#titulo {
+    color: #ffffff;
+    width: 50vh;
+    font-family: sans-serif;
+    margin-left: 7%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    width: 40vh;
+    font-family: sans-serif;
+    color: #ffffff;
+    margin-left: 10%;
+} 
+
+#check{
+    width: 65vh;
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    color:black;
+    width: 70vh;
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: #be8cf0;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    color: #000000;
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #E0E0F8;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #59429d;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 95%;
+    left: 85%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #280f75;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+footer{
+    background-image: linear-gradient(160deg, #510167 0%, #060008 100%);
+    border-bottom: 2px solid;
+    width: 50vh;
+    height: 10vh;
+    margin-left: 26px;
+}
